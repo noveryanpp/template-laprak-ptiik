@@ -32,8 +32,8 @@
 
 % Penomoran section dengan huruf kapital (A, B, C, ...)
 \renewcommand{\thesection}{\Alph{section}.}
-\renewcommand{\thesubsection}{\thesection.\arabic{subsection}.}
-\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}.}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\thesubsection\arabic{subsubsection}.}
 
 % Penomoran figure mengikuti section (misal, Gambar A.1, A.2, ...)
 \renewcommand{\thefigure}{\thesection.\arabic{figure}}
@@ -42,7 +42,7 @@
 \makeatother
 
 \titleformat{\section}
-  {\normalfont\fontsize{13pt}{15pt}\selectfont\bfseries}
+  {\normalfont\large\selectfont\bfseries}
   {\thesection}
   {0.5em}
   {}
